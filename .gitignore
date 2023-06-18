@@ -1,3 +1,12 @@
+# exclude everything
+data/*
+images/*
+
+# exception to the rule
+!data/.gitkeep
+!data/sample.csv
+!images/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
