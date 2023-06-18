@@ -6,7 +6,6 @@ from time import sleep
 from slugify import slugify
 
 from multiprocessing import Pool, cpu_count
-from functools import partial
 
 # downnload image function
 def download_image_url(uri):
