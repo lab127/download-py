@@ -35,7 +35,7 @@ title_column_index = 0
 image_url_start_index = 2
 
 # directory to save the downloaded images
-output_directory = 'data/images'
+output_directory = 'images'
 
 # Read the CSV file
 with open(csv_file, 'r') as file:
