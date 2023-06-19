@@ -10,7 +10,7 @@ from multiprocessing import Pool, cpu_count
 # downnload image function
 def download_image_url(uri):
     image_url = uri[1]
-    output_path = f"{uri[0]}.jpg"
+    output_path = uri[0]
     if not os.path.exists(output_path):
         print("path ok")
         try:
