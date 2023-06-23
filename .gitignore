@@ -4,7 +4,7 @@ images/*
 
 # exception to the rule
 !data/.gitkeep
-!data/sample.csv
+!data/*.sample.csv
 !images/.gitkeep
 
 # Byte-compiled / optimized / DLL files
