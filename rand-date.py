@@ -37,6 +37,7 @@ import re
 
 ttl = "h^&ell`.,|o w]{+orld"
 ttl2 = "﻿HEELow`* |W ❤ Wo()rLD"
+ttl3 = "FAYOLA Daily hijab simpel renda manis Quail Hijab bahan wolly crepe"
 
 def get_title(title):
     if re.match('^[^a-zA-Z]', title, re.I):
@@ -45,6 +46,16 @@ def get_title(title):
         s = title
     return s
 
+def get_brand(title):
+    if re.match(r'^(?=.*\bquail?\b).*$', title, re.I):
+        brand = "Quail"
+    elif re.match(r'^(?=.*\byessana?\b).*$', title, re.I):
+        brand = "Yessana"
+    else:
+        brand = "Mewlena"
+    
+    return brand
+
 s = re.sub('^[^a-zA-Z]', 'aaaaa-', ttl2)
-print(s)
+print(get_brand(ttl3))
 
