@@ -1,2 +1,2 @@
 # download-py
-download with python from csv
+download image dataset shopee with python from csv
